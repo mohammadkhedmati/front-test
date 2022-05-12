@@ -53,9 +53,8 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
-.footer {
-  flex-shrink: 0;
-  text-align: center;
-  background-color: tomato;
+.main{
   color: white;
+  font-size: xx-large;
+  margin-top: 10rem;
 }
