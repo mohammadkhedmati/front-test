@@ -1,9 +1,19 @@
 import React, { Component } from 'react'
+import { slide as Menu } from 'react-burger-menu'
 
 export default class sidebar extends Component {
-  render() {
+  showSettings (event) {
+    event.preventDefault();
+  }
+
+  render () {
+    // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     return (
-      <div>sidebar</div>
-    )
+      <Menu>
+        <a id="home" className="menu-item" href="/">Home</a>
+        <a id="about" className="menu-item" href="/about">About</a>
+        <a id="contact" className="menu-item" href="/contact">Contact</a>
+      </Menu>
+    );
   }
 }
